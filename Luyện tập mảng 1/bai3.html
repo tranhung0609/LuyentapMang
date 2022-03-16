@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ["1","5","6","2","3","8"]
+    let max = a[0];
+    let b = 0;
+    for (let i= 0; i <a.length; i++){
+        if (max <a[i]){
+            max = a[i]
+        }
+        b+=a[i];
+    }
+    console.log("Số lớn nhất là: " + max + " Và giá trị trung bình của các phần tử là: " + b/a.length)
+</script>
+</body>
+</html>
