@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
-    let a =[2,3,5,25,77,32,6,87,9,37]
-    let v = prompt("nhap vao V");
-    let indexOf = -1
-    for (let i=0; i<a.length;i++){
-        if (a[i] == v){
-            document.write("V is in the array")
-            indexOf = i
-        }
+    let arr= new Array(10);
+    for (let i = 0;i<arr.length;i++){
+        arr[i] = +(prompt("Nhập số phần tử vào trong mảng :"));
     }
-   document.write(indexOf);
+    let numV = +prompt("Nhập vào số nguyên V:")
+    let result = arr.indexOf(numV)
+    if (result !== -1) {
+        alert("V is in the array");
+    } else {
+        alert("V is not in the array");
+    }
 </script>
 </body>
 </html>
