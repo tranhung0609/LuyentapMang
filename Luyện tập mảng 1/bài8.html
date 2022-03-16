@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = +prompt("nhập số nguyên vào mảng");
+  let arr = new Array(number)
+  for (let i = 0;i<arr.length;i++){
+    arr[i]= prompt("Nhập phần tử vào:")
+  }
+  let kq = arr.sort(function (a, b){
+    return b - a
+  })
+  console.log(kq)
+</script>
+</body>
+</html>
