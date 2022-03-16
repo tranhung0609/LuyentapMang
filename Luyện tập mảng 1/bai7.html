@@ -6,7 +6,22 @@
 </head>
 <body>
 <script>
-
+    let number = +prompt("nhập vào số lượng phần tử");
+    let arr = new Array(number)
+    for (let i =0; i <arr.length;i++ ){
+        arr[i] = +prompt("Nhập vào phần tử thứ:")
+    }
+    let numberInput = +prompt("Nhập vào giá trị muốn kiểm trả :")
+    for (let i = 0; i <arr.length; i++) {
+        if (arr[i] === numberInput){
+            for (let j = i ;j<arr.length -1; j++) {
+                arr[j] = arr[j -1]
+            }
+            arr[arr.length -1] = 0
+            i--
+        }
+    }
+    console.log("arr")
 </script>
 </body>
 </html>
