@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập số lượng phần tử")
+    let arr = new Array(num)
+    let count = 0;
+    for (let i= 0; i < arr.length;i++){
+        arr[i] = prompt("nhập vào giá trị")
+        if (isNaN(arr[i])){
+            count++
+        }
+    }
+    console.log(count)
+</script>
+</body>
+</html>
